@@ -8,6 +8,11 @@ RUN \
   apt-get install -y python python-dev python-pip python-virtualenv && \
 rm -rf /var/lib/apt/lists/*
 
-RUN chmod 777 ./install-reddit.sh
+RUN  apt-get update \
+  && apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN chmod +x install-reddit.sh
+
 
 
