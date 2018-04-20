@@ -21,7 +21,7 @@ RUN useradd -ms /bin/bash newuser
 USER newuser
 #WORKDIR /home/newuser
 
-RUN  ./install-reddit.sh
+RUN  sudo ./install-reddit.sh
 
 
 
