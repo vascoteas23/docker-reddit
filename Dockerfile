@@ -19,7 +19,7 @@ RUN chmod +x ./install-reddit.sh
 #add a new user
 RUN useradd -ms /bin/bash newuser
 USER newuser
-WORKDIR /home/newuser
+#WORKDIR /home/newuser
 
 RUN  ./install-reddit.sh
 
