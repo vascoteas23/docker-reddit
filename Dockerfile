@@ -8,6 +8,6 @@ RUN \
   apt-get install -y python python-dev python-pip python-virtualenv && \
 rm -rf /var/lib/apt/lists/*
 
-RUN install-reddit.sh -y
+RUN ./install-reddit.sh -y
 
 
