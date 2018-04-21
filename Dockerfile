@@ -1,7 +1,9 @@
 FROM ubuntu:14.04
 COPY Dockerfile /
 COPY install-reddit.sh /
-COPY install /
+
+RUN mkdir install
+COPY install /install/
 
 #install python 2.7.6
 
