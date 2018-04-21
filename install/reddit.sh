@@ -100,7 +100,7 @@ done
 $RUNDIR/install_apt.sh
 
 # install cassandra from datastax
-$RUNDIR/install_cassandra.sh
+#$RUNDIR/install_cassandra.sh
 
 # install zookeeper
 $RUNDIR/install_zookeeper.sh
@@ -147,10 +147,10 @@ clone_reddit_service_repo activity
 ###############################################################################
 
 # Configure Cassandra
-$RUNDIR/setup_cassandra.sh
+#$RUNDIR/setup_cassandra.sh
 
 # Configure PostgreSQL
-$RUNDIR/setup_postgres.sh
+#$RUNDIR/setup_postgres.sh
 
 # Configure mcrouter
 $RUNDIR/setup_mcrouter.sh
