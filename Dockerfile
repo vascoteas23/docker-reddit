@@ -21,9 +21,9 @@ RUN chmod +x ./install-reddit.sh
 #USER newuser
 #WORKDIR /home/newuser
 
-RUN apt-transport-https
+#RUN apt-transport-https
 
-RUN apt-get install software-properties-common
+#RUN apt-get install software-properties-common
 
 RUN  ./install-reddit.sh
 
