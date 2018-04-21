@@ -34,19 +34,19 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-if [[ -z "$REDDIT_USER" ]]; then
+#if [[ -z "$REDDIT_USER" ]]; then
     # in a production install, you'd want the code to be owned by root and run
     # by a less privileged user. this script is intended to build a development
     # install, so we expect the owner to run the app and not be root.
-    cat <<END
-ERROR: You have not specified a user. This usually means you're running this
-script directly as root. It is not recommended to run reddit as the root user.
-
-Please create a user to run reddit and set the REDDIT_USER variable
-appropriately.
-END
-    exit 1
-fi
+#    cat <<END
+#ERROR: You have not specified a user. This usually means you're running this
+#script directly as root. It is not recommended to run reddit as the root user.
+#
+#Please create a user to run reddit and set the REDDIT_USER variable
+#appropriately.
+#END
+#    exit 1
+#fi
 
 if [[ "amd64" != $(dpkg --print-architecture) ]]; then
     cat <<END
