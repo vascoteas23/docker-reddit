@@ -25,7 +25,7 @@ RUN chmod +x ./install-reddit.sh
 
 #RUN apt-get install software-properties-common
 
-RUN  ./install-reddit.sh
+#RUN  ./install-reddit.sh
 
 
 
