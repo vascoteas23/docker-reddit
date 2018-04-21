@@ -17,11 +17,11 @@ RUN  apt-get update \
 RUN chmod +x ./install-reddit.sh
 
 #add a new user
-RUN useradd -ms /bin/bash newuser
-USER newuser
+#RUN useradd -ms /bin/bash newuser
+#USER newuser
 #WORKDIR /home/newuser
 
-RUN  sudo ./install-reddit.sh
+RUN  ./install-reddit.sh
 
 
 
