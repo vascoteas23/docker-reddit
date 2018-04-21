@@ -100,5 +100,5 @@ echo
 #read -er -n1 -p "proceed? [Y/n]" response
 #if [[ $response =~ ^[Yy]$ || $response == "" ]]; then
     echo "Excellent. Here we go!"
-    $SCRIPTDIR/reddit.sh
+   # $SCRIPTDIR/reddit.sh
 #fi
