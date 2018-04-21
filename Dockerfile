@@ -21,6 +21,8 @@ RUN chmod +x ./install-reddit.sh
 #USER newuser
 #WORKDIR /home/newuser
 
+RUN apt-get install software-properties-common
+
 RUN  ./install-reddit.sh
 
 
